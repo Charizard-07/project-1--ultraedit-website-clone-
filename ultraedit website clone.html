@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultra edit clone</title>
+</head>
+<style>
+
+    /*nav part*/
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    a{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-decoration: none;
+        color: white;
+    }
+
+    .nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position:sticky;
+    }
+
+    .logo img{
+        height: 90px;
+    }
+
+    .content ul{
+        display: flex;
+        gap: 28px;
+        align-items: center;
+    }
+
+    .content ul li{
+        list-style-type:none;
+        font-family: 'Segoe UI', Tahoma, 'Geneva', 'Verdana', sans-serif;
+
+    }
+
+    .content ul li a{
+        text-decoration: none;
+        color: black;
+    }
+
+    li img{
+        padding-top: 15px;
+    }
+
+    .content a:hover{
+        color: rgb(86, 86, 86);
+    }
+
+    /*content part*/
+
+    .box{
+        width: 850px;
+        text-align: center;
+        margin-left: 23vw;
+        margin-top: 70px;
+    }
+
+    .main{
+        display: flex;
+        justify-content: center;
+        margin: 30px;
+        font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+        font-size: 22px;
+        margin-bottom: 40px;
+    }
+
+    .main h1{
+        font-weight: 400;
+    }
+
+    .bold{
+        font-weight: 700 ;
+    }
+
+    .para{
+        display: flex;
+        justify-content: center;
+        font-family: 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif';
+        font-size: 25px;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+    }
+
+    .para p{
+        font-weight: 400;
+    }
+
+    .button{
+        display: flex;
+        justify-content: center;
+    }
+
+    button{
+        background-color:#40cae9;
+        color: white;
+        padding: 20px;
+        border-radius: 8px;
+        font-weight: bolder;
+        border: 0px;
+        cursor: pointer;
+        margin-bottom: 50px;
+    }
+
+    button:hover{
+        background-color: #20c3eb;
+    }
+
+    /*below content part*/
+
+    ul.body{
+        display: flex;
+        align-items:baseline;
+        gap: 8px;
+        font-family: 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif';
+        margin-bottom: 60px;
+    }
+
+    ul.body li{
+        list-style: none;
+
+    }
+
+    li.one img{
+        height: 50px;
+        margin-right: 12px;
+    }
+    
+    li.two{
+        font-size: 24px;
+    }
+
+    li.four a{
+        color: black;
+        text-decoration: none;
+    }
+
+    /*final grid*/
+
+    .grid_container{
+        display: grid; 
+        row-gap: 30px;
+        column-gap: 20px;
+        grid-template-columns: repeat(3,300px); 
+        margin-left: -2.5vw; 
+    }
+
+    .grid_item{
+        width: 280px;
+        height: 180px;
+        border: 1px solid rgb(238, 240, 243);
+        background-color: rgb(238, 240, 243);
+    }
+
+    .g_head{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-bottom: 40px;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .bu1{
+        background-color: rgb(21, 182, 86);
+        padding: 10px;
+        margin-bottom: -9px;
+    }
+
+    .bu1:hover{
+        background-color: rgb(21, 182, 86);
+    }
+
+    .midd{
+        margin: 25px;
+    }
+
+    .g_pone{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 10px;
+        cursor: pointer;
+    }
+
+    .g_ptwo{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 8px;
+        word-wrap: break-word;
+        cursor: pointer;
+    }
+
+    .g_pthree{
+    font-size: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: -25px;
+    margin-bottom: 15px;
+}
+
+    .item10{
+        margin-bottom: 50px;
+    }
+
+</style>
+<body>
+    <div class="nav">
+        <div class="logo"><a href="/"><img src="https://lh5.googleusercontent.com/YrtpCpfxE25IMnQYelivigVqMBx42hJO1esSwPunDGK_zXFyxql2m-RyEzchVwmPumtT4wKJpmALRN54i-9-eqfz5Hc7vqGEXsjuc5WeZn5YaX_RoDO0Z1NZ_SsRKW4n5kTNXiZEJO7-14qq-lWmNLQ" alt=""></a></div>
+        <div class="content">
+            <ul>
+                <li><a href="/">Products</a></li>
+                <li><a href="/">Business</a></li>
+                <li><a href="/">Resources</a></li>
+                <li><a href="/">Support</a></li>
+                <li><a href="/">Our company</a></li>
+                <li><a href="/"><img src="https://static.vecteezy.com/system/resources/previews/007/166/993/non_2x/translate-icon-flat-style-logo-template-vector.jpg" height="60px" alt=""></a></li>
+                <li><a href="/"><img src="https://logowik.com/content/uploads/images/search7780.jpg" height="28px" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="box">
+    <div class="main">
+        <h1>Download <span class="bold">Ultraedit</span> for Windows <img src="https://www.ultraedit.com/wp-content/uploads/2022/10/Reviews.png" alt=""></h1>
+    </div>
+    <div class="para">
+        <p>Download and try UltraEdit before you buy it! This download includes the full Windows version of the text editor.</p>
+    </div> 
+
+    <div class="button">
+        <button><p>DOWNLOAD MAC OR LINUX VERSION</p></button>
+    </div>
+<div>
+    <ul class="body">
+        <li class="one"><img src="https://yt3.googleusercontent.com/Qia7Z6D6vsmsvywvWG1bIDYyHZdkcFDQ9ZwYXIY-9-6KQYULXHaQtKTqPeZACZuliTKiGJ6G=s160-c-k-c0x00ffffff-no-rj" alt=""></li>
+        <li class="two">Download UltraEdit</li>
+        <li class="three">v2024.2 (released 2025-01-15) |</li>
+        <li class="four"><a href="/"> Hotfix information </a></li>
+    </ul>
+</div>
+
+<div class="grid_container">
+    <div class="grid_item">
+        <h2 class="g_head">English</h2>
+        <button class="bu1"><a href="C:\Users\Shashwat\Downloads\ue_english_64.exe">Download 64 bit</a></button>
+        <div class="midd">
+        <p class="g_pone">SHA256</p>
+        <p 
+        class="g_ptwo">B06BC2BB50623A7B1A1C0C2D1C7A6BB5346515A9F5FF2CDE19A60EEE36DC702E</p>
+        </div>
+    </div>
+
+    <div class="grid_item">
+        <h2 class="g_head">Deutsch</h2>
+        <p class="g_pthree">German</p>
+        <button class="bu1"><a href="C:\Users\Shashwat\Downloads\ue_english_64.exe">Download 64 bit</a></button>
+        <div class="midd">
+            <p class="g_pone">SHA256</p>
+            <p 
+        class="g_ptwo">405DAF5ABB800762668B965CDA04DC504B5E12BB8167C205D31B7BD1799F54A5</p>
+        </div>
+    </div>
+
+    <div class="grid_item">
+        <h2 class="g_head">Italiano</h2>
+        <p class="g_pthree">Italian</p>
+        <button class="bu1"><a href="C:\Users\Shashwat\Downloads\ue_english_64.exe">Download 64 bit</a></button>
+        <div class="midd">
+            <p class="g_pone">SHA256</p>
+            <p 
+        class="g_ptwo">F6AE0F552982CF949261AB86FFEBD4F44CBC467F8F0692E7B360CCD78392C04A</p>
+        </div>
+    </div>
+
+    <div class="grid_item">
+        <h2 class="g_head">Español</h2>
+        <p class="g_pthree">Spanish</p>
+        <button class="bu1"><a href="C:\Users\Shashwat\Downloads\ue_english_64.exe">Download 64 bit</a></button>
+        <div class="midd">
+            <p class="g_pone">SHA256</p>
+            <p 
+        class="g_ptwo">0B59B29571D36A107A4A13CD52C046D9D66C1328C367EDFC5506D914A173C2D4</p>
+        </div>
+    </div>
+
+    <div class="grid_item">
+        <h2 class="g_head">français</h2>
+        <p class="g_pthree">French</p>
+        <button class="bu1"><a href="C:\Users\Shashwat\Downloads\ue_english_64.exe">Download 64 bit</a></button>
+        <div class="midd">
+            <p class="g_pone">SHA256</p>
+            <p 
+        class="g_ptwo">4DDF3FE5C0F07709B39AC78D5A2E12851F4B01A8BE271359964D4197E8586662</p>
+        </div>
+    </div>
+
+    <div class="grid_item">
+        <h2 class="g_head">Português brasileiro</h2>
+        <p class="g_pthree">Brazilian Portugeese</p>
+        <button class="bu1"><a href="C:\Users\Shashwat\Downloads\ue_english_64.exe">Download 64 bit</a></button>
+        <div class="midd">
+            <p class="g_pone">SHA256</p>
+            <p 
+        class="g_ptwo">BA78B33518547FA143AEC9B552861BC50B8776C2FCEE0F4CDDD8CCD57C1221B1</p>
+        </div>
+    </div>
+
+    <div class="grid_item">
+        <h2 class="g_head">日本</h2>
+        <p class="g_pthree">Japanese</p>
+        <button class="bu1"><a href="C:\Users\Shashwat\Downloads\ue_english_64.exe">Download 64 bit</a></button>
+        <div class="midd">
+            <p class="g_pone">SHA256</p>
+            <p 
+        class="g_ptwo">27D827353C2FB5B7157D209A79DC0B8D9C0367B2200859CB8C75DCA39F606C3B</p>
+        </div>
+    </div>
+
+    <div class="grid_item">
+        <h2 class="g_head">한국어</h2>
+        <p class="g_pthree">Korean</p>
+        <button class="bu1"><a href="C:\Users\Shashwat\Downloads\ue_english_64.exe">Download 64 bit</a></button>
+        <div class="midd">
+            <p class="g_pone">SHA256</p>
+            <p 
+        class="g_ptwo">959F1821E36F83A0F3BBC2C474DC5097277DD97FB145E636DC8018C8BDDCD6AA</p>
+        </div>
+    </div>
+
+    <div class="grid_item">
+        <h2 class="g_head">华语</h2>
+        <p class="g_pthree">chinese</p>
+        <button class="bu1"><a href="C:\Users\Shashwat\Downloads\ue_english_64.exe">Download 64 bit</a></button>
+        <div class="midd">
+            <p class="g_pone">SHA256</p>
+            <p 
+        class="g_ptwo">1E9C3C10FCE6B91FC27E35F1F989B611F619815C51EAF59D4D9F584C04E8B87C</p>
+        </div>
+    </div>
+
+    <div class="grid_item item10">
+        <h2 class="g_head">華語</h2>
+        <p class="g_pthree">Traditional chinese</p>
+        <button class="bu1"><a href="C:\Users\Shashwat\Downloads\ue_english_64.exe">Download 64 bit</a></button>
+        <div class="midd">
+            <p class="g_pone">SHA256</p>
+            <p 
+        class="g_ptwo">6ABF82400B210F1ED7E10EAB28A2BADD682BC7A4F6D0140CE4B00C0696CB3C8D</p>
+        </div>
+    </div>   
+
+</div>
+
+</body>
+</html>
